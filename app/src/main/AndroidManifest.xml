@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.reinventatecovid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/monigote"
+        android:label="CovInfo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReinventateCovid">
+        <activity android:name=".Memory"></activity>
+        <activity android:name=".Buscaminas" />
+        <activity
+            android:name=".MenuJuegos"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".NoticiasJ"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".Que_Hago_Hoy_J"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".Consejos"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".Pantalla_Adulto"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".Pantalla_Junior"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".Que_hacer_hoy"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".SeguimientoCovid"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".Noticias"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar" />
+        <activity
+            android:name=".PantallaCarga"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pantalla_senior"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ReinventateCovid.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

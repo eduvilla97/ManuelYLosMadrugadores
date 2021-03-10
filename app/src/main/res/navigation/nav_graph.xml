@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu_init">
+
+    <fragment
+        android:id="@+id/menu_init"
+        android:name="com.example.reinventatecovid.Menu_init"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/menu_init">
+
+        <action
+            android:id="@+id/action_menu_init_to_pantalla_junior"
+            app:destination="@id/pantalla_junior" />
+        <action
+            android:id="@+id/action_menu_init_to_pantalla_adulto"
+            app:destination="@id/pantalla_adulto" />
+        <action
+            android:id="@+id/action_menu_init_to_pantalla_senior"
+            app:destination="@id/pantalla_senior" />
+    </fragment>
+    <activity
+        android:id="@+id/pantalla_junior"
+        android:name="com.example.reinventatecovid.Pantalla_Junior"
+        android:label="pantalla_junior"
+        tools:layout="@layout/pantalla_junior" />
+    <activity
+        android:id="@+id/pantalla_adulto"
+        android:name="com.example.reinventatecovid.Pantalla_Adulto"
+        android:label="activity_pantalla_adulto"
+        tools:layout="@layout/activity_pantalla__adulto" >
+    </activity>
+    <activity
+        android:id="@+id/pantalla_senior"
+        android:name="com.example.reinventatecovid.Pantalla_senior"
+        android:label="activity_pantalla_senior"
+        tools:layout="@layout/activity_pantalla_senior" >
+    </activity>
+</navigation>

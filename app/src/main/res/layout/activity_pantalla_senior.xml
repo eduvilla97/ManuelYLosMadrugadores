@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pantalla_senior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla_senior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_init"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/covid_cut"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Menu_init">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="77dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/monigote"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/button_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_info_details"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.954"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976"
+                android:onClick="InfoSenior"/>
+
+            <Button
+                android:id="@+id/button_emergencias"
+                android:layout_width="230dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="93dp"
+                android:layout_marginRight="93dp"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@drawable/emergencias"
+                android:text="@string/Emergencias"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:onClick="llamarEmergencias"
+                app:backgroundTint=" #f5b041 "
+                app:layout_constraintBottom_toTopOf="@+id/BotonQueHago"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.559" />
+
+            <Button
+                android:id="@+id/BotonQueHago"
+                android:layout_width="230dp"
+                android:layout_height="69dp"
+                android:drawableLeft="@drawable/queeeehagooo"
+                android:text="@string/que_hago_hoy"
+                android:textColor="#191818"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint=" #f39c12 "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick= "IrQuehacer" />
+            <Button
+                android:id="@+id/button_noticias"
+                android:layout_width="230dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/buenaanoticia"
+                android:text="@string/noticias"
+                android:textColor="#000000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint=" #d68910 "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BotonQueHago"
+                app:layout_constraintVertical_bias="0.364"
+                android:onClick="IrNoticias"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="96dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginLeft="315dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/elderly_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_first"
+                android:layout_width="104dp"
+                android:layout_height="32dp"
+                android:text="CovInfo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#A7FFEB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.257"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.038"
+                tools:textAlignment="center" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pantalla_adulto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla_Adulto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_init"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/covid_cut"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Menu_init">
+
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="104dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="24dp"
+            android:text="CovInfo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#A7FFEB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="77dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/monigote"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="237dp">
+
+            <ImageButton
+                android:id="@+id/button_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="InfoAdulto"
+                android:src="@android:drawable/ic_menu_info_details"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.954"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976" />
+
+            <Button
+                android:id="@+id/button_seguimiento"
+                android:layout_width="230dp"
+                android:layout_height="69dp"
+                android:drawableLeft="@drawable/covid"
+                android:text="@string/seguimientocovid"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint=" #82e0aa "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.229"
+                android:onClick="SeguimientoCovid"/>
+
+            <Button
+                android:id="@+id/BotonQueHago"
+                android:layout_width="230dp"
+                android:layout_height="69dp"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@drawable/queeeehagooo"
+                android:text="@string/que_hago_hoy"
+                android:textColor="#191818"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint=" #58d68d "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="IrQuehacer"/>
+
+            <Button
+                android:id="@+id/button_noticias"
+                android:layout_width="230dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/buenaanoticia"
+                android:text="@string/noticias"
+                android:textColor="#000000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint=" #2ecc71 "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BotonQueHago"
+                app:layout_constraintVertical_bias="0.367"
+                android:onClick="IrNoticias"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="96dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginLeft="315dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/adult_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
